@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="cadastro-form" action="/cadastro" method="post">
+            <h2>Cadastro</h2>
+            <div id="cadastro-error" class="error"></div>
+            <input type="text" name="nome" placeholder="Nome" required><br>
+            <input type="tel" name="telefone" placeholder="Telefone" required><br>
+            <input type="text" name="cpf" placeholder="CPF" required><br>
+            <input type="email" name="email" placeholder="E-mail" required><br>
+            <input type="text" name="nome_social" placeholder="Nome Social"><br>
+            <input type="text" name="cep" placeholder="CEP" required><br>
+            <input type="text" name="numero_residencia" placeholder="Número da Residência" required><br>
+            <input type="password" name="senha" placeholder="Senha (6 dígitos)" pattern="\d{6}" title="Senha deve ter exatamente 6 dígitos" required><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+
+        <form id="login-form" action="/login" method="post">
+            <h2>Login</h2>
+            <div id="login-error" class="error"></div>
+            <input type="email" name="email" placeholder="E-mail" required><br>
+            <input type="password" name="senha" placeholder="Senha (6 dígitos)" pattern="\d{6}" title="Senha deve ter exatamente 6 dígitos" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
